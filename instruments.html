@@ -16,7 +16,7 @@
     <meta name="keywords" content="sampl libraries, virtual instrument, music, music technology, native instruments kontakt, kontakt 5, kontakt 6, kontakt instrument, sampled instruments, plugin, vst instruments, vst">
     <meta name="author" content="Prisma Sounds">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -101,8 +101,7 @@
         font-family: 'Montserrat', sans-serif; 
         font-size:13px;
         padding: 20px; /* Some padding */
-        overflow: hidden
-        text-align: left;
+        overflow: hidden;
         background: #7f7f7f; /* Grey background */
         position: relative;
         bottom:0;
@@ -118,7 +117,6 @@
         -webkit-column-width: 100px; /* Chrome, Safari, Opera */
         -moz-column-width: 100px; /* Firefox */
         column-width: 100px;
-
       }
       
       .footer a{        
@@ -212,118 +210,158 @@
       text-align: left;
     }
   }
-	.overlay {
-	  position: absolute;
-	  top: 0;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  height: 100%;
-	  width: 100%;
-	  opacity: 0;
-	  transition: .2s ease;
-	  background-color: white;
-	}
 
-	.overlay:hover  {
-	  opacity: .7;
-	}
+  .card {
+  position: relative;
+  width: 561px;
+  display: inline-block;
+  
+  max-width:100%; 
+  height:290px; 
+  border: 1px solid #7f7f7f; 
+  border-radius: 4px; 
+  padding: 5px;
+  margin: 5%;
+}
 
+  .image {
+    display: block;
+    width: 550px;
+    height: auto;
+  }
 
-</style> </head>
-  <body>
-    <div id="wrap">
-      <div id="main" class="container clear-top">
-        <div class="header"> <img src="Images/prismasounds_logo.png" style="width:auto; max-width:100%; max-height:13vh">
-        </div>
-        <ul class="topnav" id="myTopnav">
-          <li><a href="index.html">Home</a> </li>
-          <li><a href="#"><u>Instruments</u></a> </li>
-          <li><a href="about.html">About</a> </li>
-          <li><a href="contact.html">Contact</a> </li>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.7);  }
 
-              class="fa fa-bars"></i> </a> <br>
-        </ul>
-        <br>
-        <br><br>
-        <div style="font-family: typoliner-rwlight; font-size:40px; margin-left:0%">INSTRUMENTS</div>
-        <br>
-        <section> <br>
+  .card:hover .overlay {
+    opacity: 1;
+  }
 
-          <a href="dr_ums.html"><img id="myImg" src="Images/Dr.UMS_std_thb.PNG" style="width:550px; max-width:100%; max-height:280px; border: 1px solid #7f7f7f; border-radius: 4px; padding: 5px;">
-            </a> 
+  .text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
-        </section>
-        <section> <a href="dr_ums.html" style="color:white;">
-            Dr.UMS</a>
-          
-           <br>
-          <br>          
-		  <br>
-          <br>         <br>
-          <p></p>
-          <div style="font-family: typoliner-rwlight; font-size:40px; margin-left:0%">FREEBIES</div>
-			<br><br>
-          <a href="taiko.html"><img src="Images/Taiko_thb.PNG" style="width:550px; max-width:100%; max-height:280px; border: 1px solid #7f7f7f; border-radius: 4px; padding: 5px;">
-            </a>
-        </section>
+</style> 
+</head>
 
-        <section> <a href="taiko.html" style="color:white;">
-            Taiko</a>
-		<br>          
-		<br>
-          <a href="dr_ums_lite.html"><img src="Images/Dr.UMS_lite_thb.PNG" style="width:550px; max-width:100%; max-height:280px; border: 1px solid #7f7f7f; border-radius: 4px; padding: 5px;">
-            </a>
-        </section>
-        <section> <a href="dr_ums_lite.html" style="color:white;">
-            Dr.UMS Lite</a>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-		            <br>
-
-          <p></p>
-        </section>
+<body>
+  <div id="wrap">
+    <div id="main" class="container clear-top">
+      <div class="header"> <img src="Images/prismasounds_logo.png" style="width:auto; max-width:100%; max-height:13vh">
       </div>
+      <ul class="topnav" id="myTopnav">
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="#"><u>Instruments</u></a> </li>
+        <li><a href="about.html">About</a> </li>
+        <li><a href="contact.html">Contact</a> </li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i
+
+            class="fa fa-bars"></i> </a> <br>
+      </ul>
+
+
+      <div style="font-family: typoliner-rwlight; font-size:40px; margin-left:0%; margin-top: 3%;">INSTRUMENTS</div>
+      <section>
+
+        <div class="card"><a href="dr_ums.html">
+          <img class="image" Alt="dr.ums" src="Images/Dr.UMS_std_thb.PNG"/>
+
+          <div class="overlay">
+            <div class="text">Dr.UMS
+              </div>
+            </div>
+           </a>
+          
+        </div>
+
+        <div class="card"><a href="muted_bass.html">
+          <img class="image" Alt="muted bass" src="Images/Muted_bass.PNG"/>
+
+          <div class="overlay">
+            <div class="text">Muted Bass
+              </div>
+            </div>
+           </a>
+        </div>  
+
+      </section>
+
+
+    <div style="font-family: typoliner-rwlight; font-size:40px; margin-left:0%; margin-top: 2%;">FREEBIES</div>
+      <div class="card" style="height: 262px;"><a href="taiko.html">
+        <img src="Images/Taiko_thb.PNG" class="image">
+        <div class="overlay">
+          <div class="text">Taiko</div>
+        </div>
+       </a>
+      </div>
+
+      <div class="card" style="height: 262px;"><a href="dr_ums_lite.html">
+        <img src="Images/Dr.UMS_lite_thb.PNG" class="image" style="padding-bottom: 27px;">
+        <div class="overlay">
+          <div class="text">Dr.UMS Lite</div>
+        </div>
+      </a>
+      </div>
+        <p></p>
+      </section>
     </div>
-    <!-- Footer -->
-    <footer class="footer"> <br>
-      <b><a href="instruments.html">INSTRUMENTS</a></b> <br>
-      <a href="dr_ums.html" style="font-weight:normal;">Dr.UMS</a> <br>
-      <a href="taiko.html" style="font-weight:normal;">Taiko</a> <br>
-      <br>
-      <br>
-      <br>
-      <a href="contact.html"><b>GET IN TOUCH</b></a><br>
-      <a href="https://www.facebook.com/pg/PrismaSounds-1954780614824495/"><i class="fa fa-facebook-official"> </i></a> <a href="https://www.facebook.com/pg/PrismaSounds-1954780614824495/" style="font-weight:normal">Prisma Sounds
-        </a><br> <a href="https://www.instagram.com/prismasounds_insta/"><i class="fa fa-instagram"></i></a><a href="https://www.instagram.com/prismasounds_insta/" style="font-weight:normal">
-        @prismasounds_insta </a><br>
-      <a href="https://www.twitter.com/prismasounds" style="font-weight:normal"><i
+  </div>
+  <!-- Footer -->
+  <footer class="footer"> <br>
+    <b><a href="instruments.html">INSTRUMENTS</a></b> <br>
+    <a href="dr_ums.html" style="font-weight:normal;">Dr.UMS</a> <br>
+    <a href="taiko.html" style="font-weight:normal;">Taiko</a> <br>
+    <a href="muted-bass.html" style="font-weight:normal;">Muted Bass</a> <br>
+    <br>
+    <br>
+    <a href="contact.html"><b>GET IN TOUCH</b></a><br>
+    <a href="https://www.facebook.com/pg/PrismaSounds-1954780614824495/"><i class="fa fa-facebook-official"> </i></a> <a href="https://www.facebook.com/pg/PrismaSounds-1954780614824495/" style="font-weight:normal">Prisma Sounds
+      </a><br> <a href="https://www.instagram.com/prismasounds_insta/"><i class="fa fa-instagram"></i></a><a href="https://www.instagram.com/prismasounds_insta/" style="font-weight:normal">
+      @prismasounds_insta </a><br>
+    <a href="https://www.twitter.com/prismasounds" style="font-weight:normal"><i
 
-          class="fa fa-twitter"> </i></a><a href="https://www.twitter.com/prismasounds"
+        class="fa fa-twitter"> </i></a><a href="https://www.twitter.com/prismasounds"
 
-        style="font-weight:normal">@prismasounds</a> </footer>
-    <script>
-          function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                  x.className += " responsive";
-              } else {
-                  x.className = "topnav";
-              }
-          }
-</script> <script>$ = function(id) {
-  return document.getElementById(id);
-}
+      style="font-weight:normal">@prismasounds</a> </footer>
+  <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+  </script> 
+  
+  <script>$ = function(id) {
+    return document.getElementById(id);
+  }
 
-var show = function(id) {
-	$(id).style.display ='block';
-}
-var hide = function(id) {
-	$(id).style.display ='none';
-}</script>
+  var show = function(id) {
+    $(id).style.display ='block';
+  }
+  var hide = function(id) {
+    $(id).style.display ='none';
+  }
+  </script>
   </body>
 </html>

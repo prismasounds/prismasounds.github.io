@@ -195,7 +195,10 @@ a:hover{
     border: 1px solid #7f7f7f; 
     border-radius: 4px; 
     padding: 5px;
-    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
 
 .image {

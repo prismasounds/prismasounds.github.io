@@ -1,122 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166852242-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-166852242-1');
-    </script>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="sample libraries and virtual instruments">
-    <meta name="author" content="Prisma Sounds">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	  <title>Dr.UMS Lite - Free Kontakt drum machine by Prisma Sounds</title>
-  </head>
-  <body>
-    <div id="wrap">
-      <div id="main" class="container clear-top">
-        <img src="Images/prismasounds_logo.png" style="width:auto; max-width:100%; max-height:13vh;">
-        <ul class="topnav" id="myTopnav">
-          <li><a href="index.html">Home</a> </li>
-          <li><a href="instruments.html"><u>Instruments</u></a> </li>
-          <li><a href="about.html">About</a> </li>
-          <li><a href="contact.html">Contact</a> </li>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a> <br>
-        </ul>
-        <br>
-        <br>
-        <div style="font-family: typoliner-rwlight; font-size:40px;">Taiko</div>
-        <br>
-	
-	      <div class="container-fluid" style="padding-right: 0px; padding-left: 0px;">	
-		      <div class="row" style="padding-right: 0px; padding-left: 0px;">
-            <div class="col-md-6">
-              <img id="myimg" class="prod_pic" src="Images/Taiko_thb.PNG">
-            </div>
-            <div class="col-md-6">
-              <iframe title="playlist" class="playlist" width="100%" height="450" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/698665980&color=%23949494&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            </div>
-	        </div>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166852242-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-166852242-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Taiko - Free Kontakt instrument by Prisma Sounds. Traditional Japanese taiko drums with modern production techniques.">
+  <meta name="keywords"
+    content="Taiko, Japanese drums, taiko drums, free Kontakt, sample library, virtual instrument, music production, percussion">
+  <meta name="author" content="Prisma Sounds">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/modern-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <title>Taiko - Free Kontakt Instrument by Prisma Sounds</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__brand">
+        <img src="images/prismasounds_logo.png" alt="Prisma Sounds" class="nav__logo">
+      </div>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a href="instruments.html" class="nav__link nav__link--active">Products</a>
+          <ul class="nav__dropdown">
+            <li class="nav__dropdown-item">
+              <a href="instruments.html" class="nav__dropdown-link">Instruments</a>
+            </li>
+            <li class="nav__dropdown-item">
+              <a href="instruments.html#free" class="nav__dropdown-link">Free</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h1 class="page-title">Taiko</h1>
+
+      <div class="prod_single_column">
+        <div class="prod_image">
+          <img id="myimg" class="prod_pic" src="images/taiko_thb.png" alt="Taiko Interface">
         </div>
-		
+
         <div class="prod_description">
-          <p> <b>Taiko</b> is a free Kontakt instrument based on <a href="https://www.subaqueousmusic.com/free-taiko-drum-rack/" style="color:white">Subaqueous music</a> 
-            Free Taiko Drum Rack and <a href="http://schristiancollins.com/vi-percussion.php" style="color:white">S. Christian Collins's</a> port for Sforzando.
-      
-            As we made plenty of use of these samples, we decided to bring this instrument to Kontakt. We took the chance to add a few more 
-            controls on the instrument for some sound design fun, such as:
-      
-            <ul>
-              <li>Velocity to Volume control;</li>
-              <li>3-band equalizer;</li>
-              <li>ADSR filter;</li>
-              <li>An FX tab with: Distortion, Saturation, Delay and Compression;</li>
-              <li>An arpeggiator module.</li>
-            </ul>
-          </p>        
           <p>
-            So... what else? Our work here is done, have fun!<br>
+            <strong>Taiko</strong> brings the traditional power and beauty of Japanese taiko drums to your music
+            production. These ancient instruments have been used for centuries in Japanese culture for ceremonies,
+            festivals, and performances.
           </p>
-          <p></p>
-        </div>		
-        <div class="container" style="max-width:750px; margin:auto; margin-left:10%;margin-right:10%;margin-bottom: 30px;"><br>
-          <form method="get" action="downloads/prismasounds-free_taiko.zip" > <input value="FREE DIRECT DOWNLOAD" type="submit"> </form>
-              <form action="https://www.kvraudio.com/developer/prisma-sounds"> <input value="DOWNLOAD ON KVR" type="submit"></form>
-        </div>    
-        <div class="prod_description">
-          <i>Taiko is compatible with Kontakt <b>5.6.8</b> and above, and requires the full version of Kontakt.</i> </p>
-          <p>Do you have a demo featuring this product? <a href="contact.html" style="color: white; font-weight:normal;"><u>Let us hear it!</u></a> </p>
-        </div>
-      </div> 
-    </div>  
+          <p>
+            Our free Taiko instrument captures the authentic sound and character of these powerful drums, allowing you
+            to add dramatic percussion to your compositions. Perfect for cinematic music, world music, or any production
+            that needs impactful, traditional percussion.
+          </p>
+          <div class="purchase-container">
+            <a href="downloads/prismasounds-free_taiko.zip" class="btn btn--primary btn--large" download>
+              Download Taiko (Free)
+            </a>
+          </div>
+          <p><strong>Features:</strong></p>
+          <ul>
+            <li>Traditional Japanese taiko drums with authentic character and tone</li>
+            <li>Professional recording quality for pristine audio</li>
+            <li>Simple interface for quick and easy percussion programming</li>
+            <li>Perfect for cinematic, world music, and dramatic compositions</li>
+            <li>Completely free - no cost, no strings attached</li>
+            <li>Works with Kontakt Player and full version of Kontakt</li>
+          </ul>
 
-  
-    <!-- Footer -->
-    <footer class="footer"> <br>
-      <b><a href="instruments.html">INSTRUMENTS</a></b> <br />
-      <a href="dr_ums.html" style="font-weight: normal">Dr.UMS</a> <br />
-      <a href="taiko.html" style="font-weight: normal">Taiko</a> <br />
-      <a href="muted-bass.html" style="font-weight: normal">Muted Bass</a><br />
-      <a href="upright-detuned.html" style="font-weight: normal">Upright Detuned</a> 
-      <br>
-      <br>
-      <br>
-      <a href="contact.html"><b>GET IN TOUCH</b></a><br>
-      <a href="https://www.facebook.com/pg/PrismaSounds-1954780614824495/"><i class="fa fa-facebook-official"> </i></a> 
-      <a href="https://www.facebook.com/pg/PrismaSounds-1954780614824495/" style="font-weight:normal">Prisma Sounds</a><br> 
-      <a href="https://www.instagram.com/prismasounds_insta/"><i class="fa fa-instagram"></i></a>
-      <a href="https://www.instagram.com/prismasounds_insta/" style="font-weight:normal">@prismasounds_insta </a><br>
-      <a href="https://www.twitter.com/prismasounds" style="font-weight:normal"><i class="fa fa-twitter"> </i></a>
-      <a href="https://www.twitter.com/prismasounds" style="font-weight:normal">@prismasounds</a> 
-    </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script> 
-    <script language="JavaScript">
-      var frmvalidator  = new Validator("contactform");
-      frmvalidator.addValidation("name","req","Please provide your name");
-      frmvalidator.addValidation("email","req","Please provide your email");
-      frmvalidator.addValidation("email","email", "Please enter a valid email address");
-    </script> 
-  </body>
+          <!-- Demos Section -->
+          <div class="demos-section">
+            <h3 class="demos-section__title">Demos</h3>
+            <div class="playlist">
+              <iframe title="playlist" class="playlist" width="100%" height="450" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/698665980&color=%23949494&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <p>
+              Do you have a demo featuring this product? <a href="contact.html">Let us hear it!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod_description">
+        <p>
+          <em>Taiko is compatible with Kontakt <strong>5.8.1</strong> and above. Works with both Kontakt Player and full
+            version of Kontakt.</em>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3 class="footer__title">Instruments</h3>
+          <ul class="footer__links">
+            <li><a href="dr_ums.html" class="footer__link">Dr.UMS</a></li>
+            <li><a href="taiko.html" class="footer__link">Taiko</a></li>
+            <li><a href="muted-bass.html" class="footer__link">Muted Bass</a></li>
+            <li><a href="upright-detuned.html" class="footer__link">Upright Detuned</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Connect</h3>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/pg/PrismaSounds-1954780614824495/" class="footer__social-link"
+              aria-label="Facebook">
+              <svg class="footer__social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+              Prisma Sounds
+            </a>
+            <a href="https://www.instagram.com/prismasounds_insta/" class="footer__social-link" aria-label="Instagram">
+              <svg class="footer__social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+              @prismasounds_insta
+            </a>
+            <a href="https://www.twitter.com/prismasounds" class="footer__social-link" aria-label="Twitter">
+              <svg class="footer__social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+              </svg>
+              @prismasounds
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 Prisma Sounds. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>

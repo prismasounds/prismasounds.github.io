@@ -1,0 +1,25 @@
+{
+  "name": "Prisma Sounds",
+  "short_name": "Prisma Sounds",
+  "description": "Premium sample libraries and virtual instruments for composers and producers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["music", "entertainment", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}
